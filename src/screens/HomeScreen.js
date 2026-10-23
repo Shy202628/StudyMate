@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import {
   View, Text, ScrollView, TouchableOpacity, StyleSheet, TextInput, Modal, Platform
@@ -268,7 +267,7 @@ export default function HomeScreen({ navigation }) {
                 styles.input,
                 { backgroundColor: colors.card, color: colors.text },
               ]}
-              placeholder="e.g. Read chapter 7"
+              placeholder="Enter any task you need to do" 
               placeholderTextColor={colors.muted}
               value={title}
               onChangeText={setTitle}

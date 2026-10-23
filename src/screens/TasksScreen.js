@@ -81,12 +81,12 @@ export default function TasksScreen() {
   }
 
   addTask({
-    title: title.trim(),
-    ...(moduleText.trim() ? {} : { subjectId }),
-    moduleName: moduleText.trim(),
-    dueDate: dueDate.toISOString(),
-    priority: 'medium',
-  });
+  title: title.trim(),
+  subjectId: subjectId || undefined,
+  moduleName: moduleText.trim(),
+  dueDate: dueDate.toISOString(),
+  priority: 'medium',
+}); 
 
   setModalVisible(false);
   Alert.alert('Task added', 'Your study task has been added successfully.');
